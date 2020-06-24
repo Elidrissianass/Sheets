@@ -1,1 +1,1 @@
-console.log("backgroudns start")
+console.log("background");
