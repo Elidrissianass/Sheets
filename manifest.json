@@ -4,24 +4,24 @@
     "version": "0.1.0",
     "manifest_version": 2,
     "background": {
-        "scripts": ["background.js"],
+        "scripts": ["background/background.js"],
         "persistent": false
       },
     "content_scripts": [
         {
         "matches":["<all_urls>"],
-        "js": ["content.js"]
+        "js": ["content/content.js"]
     }],
     "browser_action": 
     {
-        "default_popup": "index.html",
+        "default_popup": "popup/index.html",
         "default_title": "Sheets",
         "permissions":["tabs"]
 
     },
-    "icons": { "16": "dice48.png",
-        "48": "dice128.png",
-       "128": "dice.png" },
+    "icons": { "16": "popup/dice48.png",
+        "48": "popup/dice128.png",
+       "128": "popup/dice.png" },
     "permissions":["tabs"],
     "content_security_policy": "script-src 'self' https://www.gstatic.com/ https://*.firebaseio.com https://www.googleapis.com; object-src 'self'"
 }
